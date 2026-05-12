@@ -76488,7 +76488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnimatedHandOnInput
   triggerValue:
-    m_UseReference: 0
+    m_UseReference: 1
     m_Action:
       m_Name: Trigger Value
       m_Type: 0
@@ -76498,9 +76498,9 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 0}
+    m_Reference: {fileID: -5982496924579745919, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   gripValue:
-    m_UseReference: 0
+    m_UseReference: 1
     m_Action:
       m_Name: Grip Value
       m_Type: 0
@@ -76510,7 +76510,7 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 0}
+    m_Reference: {fileID: -6131295136447488360, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   handAnimator: {fileID: 1272158019}
 --- !u!114 &1969807231
 MonoBehaviour:
