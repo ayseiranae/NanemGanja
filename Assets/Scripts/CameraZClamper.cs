@@ -1,19 +1,35 @@
 using UnityEngine;
 
-public sealed class CameraYLock : MonoBehaviour
+public sealed class CameraZClamper : MonoBehaviour
 {
-    [Header("Batas Hold Ketinggian (Y)")]
+    [Header("Batas Ketinggian Tanah (Y)")]
     public float limitY = -0.7669286f; 
 
-    // Pakai FixedUpdate atau LateUpdate, tapi kita tambahkan logika paksa
+    // Subscribe ke event BeforeRender untuk menimpa pergerakan dari VR / XR Device Simulator
+    void OnEnable()
+    {
+        Application.onBeforeRender += ClampCamera;
+    }
+
+    void OnDisable()
+    {
+        Application.onBeforeRender -= ClampCamera;
+    }
+
     void LateUpdate()
+    {
+        ClampCamera();
+    }
+
+    void ClampCamera()
     {
         Vector3 currentPos = transform.position;
 
+        // Cegah kamera tembus ke bawah tanah
         if (currentPos.y < limitY)
         {
-            // Paksa posisi ke batas yang ditentukan
-            transform.position = new Vector3(currentPos.x, limitY, currentPos.z);
+            currentPos.y = limitY;
+            transform.position = currentPos;
         }
     }
 }

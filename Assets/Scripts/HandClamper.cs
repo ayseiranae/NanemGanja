@@ -2,18 +2,35 @@ using UnityEngine;
 
 public sealed class HandClamper : MonoBehaviour
 {
-    [Header("Batas Gerak Tangan")]
-    [SerializeField] private float minZ = -50f;
+    [Header("Batas Ketinggian Tanah (Y) untuk Tangan")]
+    public float limitY = -0.7669286f; // Samakan dengan limit kamera Anda
+
+    // Subscribe ke event BeforeRender untuk menimpa pergerakan dari VR / XR Device Simulator
+    void OnEnable()
+    {
+        Application.onBeforeRender += ClampHand;
+    }
+
+    void OnDisable()
+    {
+        Application.onBeforeRender -= ClampHand;
+    }
 
     void LateUpdate()
     {
-        // Ambil posisi lokal tangan terhadap Camera Offset
-        Vector3 currentPos = transform.localPosition;
+        ClampHand();
+    }
 
-        // Paksa nilai Z agar tidak kurang dari -50
-        currentPos.z = Mathf.Max(currentPos.z, minZ);
+    void ClampHand()
+    {
+        // Ambil posisi tangan di dunia (World Space)
+        Vector3 currentPos = transform.position;
 
-        // Terapkan posisi yang sudah dibatasi
-        transform.localPosition = currentPos;
+        // Cegah tangan tembus ke bawah tanah (Sumbu Y)
+        if (currentPos.y < limitY)
+        {
+            currentPos.y = limitY;
+            transform.position = currentPos;
+        }
     }
 }

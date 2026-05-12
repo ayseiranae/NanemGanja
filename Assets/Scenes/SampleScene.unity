@@ -39809,6 +39809,7 @@ GameObject:
   - component: {fileID: 1086485255}
   - component: {fileID: 1086485258}
   - component: {fileID: 1086485259}
+  - component: {fileID: 1086485260}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -40056,6 +40057,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraClamper
   minY: 0.5
+--- !u!114 &1086485260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086485253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72092438f373d9445ac2a88edc1a8127, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraZClamper
+  limitY: 0.4469286
 --- !u!1001 &1087200671
 PrefabInstance:
   m_ObjectHideFlags: 0
