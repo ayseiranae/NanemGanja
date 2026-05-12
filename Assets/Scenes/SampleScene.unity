@@ -15366,9 +15366,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5686134208185362930, guid: 1fd3a7c43c8190f4d8c167ebde694364, type: 3}
       insertIndex: -1
       addedObject: {fileID: 413807912}
-    - targetCorrespondingSourceObject: {fileID: 5686134208185362930, guid: 1fd3a7c43c8190f4d8c167ebde694364, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 413807914}
   m_SourcePrefab: {fileID: 100100000, guid: 1fd3a7c43c8190f4d8c167ebde694364, type: 3}
 --- !u!4 &413807910 stripped
 Transform:
@@ -15422,19 +15419,6 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 5686134208192617028, guid: 1fd3a7c43c8190f4d8c167ebde694364, type: 3}
   m_PrefabInstance: {fileID: 413807909}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &413807914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 413807911}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0fb164fc7254be409df216f2f55246e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PositionClamper
-  minZ: -50
 --- !u!4 &414787866 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b64664a15804c6a40b649fb352af0896, type: 3}
@@ -29536,7 +29520,6 @@ GameObject:
   - component: {fileID: 800688708}
   - component: {fileID: 800688709}
   - component: {fileID: 800688710}
-  - component: {fileID: 800688711}
   - component: {fileID: 800688712}
   m_Layer: 0
   m_Name: Right Hand
@@ -29668,19 +29651,6 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: -1758520528963094988, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   handAnimator: {fileID: 413807913}
---- !u!114 &800688711
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 800688707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0fb164fc7254be409df216f2f55246e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PositionClamper
-  minZ: -50
 --- !u!114 &800688712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39800,7 +39770,6 @@ GameObject:
   - component: {fileID: 1086485256}
   - component: {fileID: 1086485255}
   - component: {fileID: 1086485258}
-  - component: {fileID: 1086485259}
   - component: {fileID: 1086485260}
   m_Layer: 0
   m_Name: Main Camera
@@ -40036,19 +40005,6 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
---- !u!114 &1086485259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1086485253}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8004567a3436b0642b41ea14f88065bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CameraClamper
-  minY: 0.5
 --- !u!114 &1086485260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46238,9 +46194,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 109434732395284509, guid: 65847589f926b734d9eaed6e25f0046b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1272158018}
-    - targetCorrespondingSourceObject: {fileID: 109434732395284509, guid: 65847589f926b734d9eaed6e25f0046b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1272158020}
   m_SourcePrefab: {fileID: 100100000, guid: 65847589f926b734d9eaed6e25f0046b, type: 3}
 --- !u!4 &1272158016 stripped
 Transform:
@@ -46294,19 +46247,6 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 109434732388006827, guid: 65847589f926b734d9eaed6e25f0046b, type: 3}
   m_PrefabInstance: {fileID: 1272158015}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1272158020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1272158017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0fb164fc7254be409df216f2f55246e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PositionClamper
-  minZ: -50
 --- !u!1001 &1272245285
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49616,7 +49556,6 @@ Transform:
   - {fileID: 1849529504}
   - {fileID: 110174413}
   - {fileID: 919681718}
-  - {fileID: 2113603213}
   - {fileID: 856237248}
   - {fileID: 1452925334}
   m_Father: {fileID: 1537122679}
@@ -62640,7 +62579,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
+  m_RayTracingMode: 0
   m_RayTraceProcedural: 0
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
@@ -62720,7 +62659,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -71225,7 +71164,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1969807227}
   - component: {fileID: 1969807228}
-  - component: {fileID: 1969807230}
   - component: {fileID: 1969807229}
   - component: {fileID: 1969807231}
   m_Layer: 0
@@ -71358,19 +71296,6 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 0}
   handAnimator: {fileID: 1272158019}
---- !u!114 &1969807230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1969807226}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0fb164fc7254be409df216f2f55246e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PositionClamper
-  minZ: -50
 --- !u!114 &1969807231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77117,51 +77042,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b64664a15804c6a40b649fb352af0896, type: 3}
---- !u!1 &2113603212
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2113603213}
-  - component: {fileID: 2113603214}
-  m_Layer: 0
-  m_Name: PositionClamper
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2113603213
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2113603212}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.381781, y: 0, z: 1.2660899}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1373042730}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2113603214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2113603212}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0fb164fc7254be409df216f2f55246e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PositionClamper
-  minZ: -50
 --- !u!1001 &2113657330
 PrefabInstance:
   m_ObjectHideFlags: 0
