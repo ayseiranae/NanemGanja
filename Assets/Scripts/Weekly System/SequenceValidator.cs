@@ -1,8 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
-
 public class SequenceValidator : MonoBehaviour
 {
     [Header("Game Progression Settings")]
@@ -75,4 +73,3 @@ public class SequenceValidator : MonoBehaviour
         }
     }
 }
-
