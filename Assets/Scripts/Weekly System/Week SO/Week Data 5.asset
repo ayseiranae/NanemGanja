@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Week Data 5
   m_EditorClassIdentifier: Assembly-CSharp::WeekData
   weekNumber: 5
-  requiredSequence: 
+  requiredSequence: 03000000
   hasHints: 1

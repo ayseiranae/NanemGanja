@@ -1,14 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
-
-
-
-
-
-
-
 public class SequenceValidator : MonoBehaviour
 {
     [Header("Game Progression Settings")]
@@ -39,6 +31,7 @@ public class SequenceValidator : MonoBehaviour
     {
         List<ActionType> requiredSequence = currentWeek - 1 < allWeeksData.Count ? allWeeksData[currentWeek - 1].requiredSequence : new List<ActionType>();
         if (requiredSequence == null || requiredSequence.Count == 0) return;
+        Debug.Log("Received action {receivedAction}. Checking against required sequence for Week " + currentWeek);
 
         // cek aksinya sesuai dengan step saat ini ngga
         if (receivedAction == requiredSequence[currentStepIndex])
