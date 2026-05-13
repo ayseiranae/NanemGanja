@@ -1,16 +1,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
-public struct WeekData
-{
-    [Tooltip("Daftar urutan aksi yang benar untuk minggu ini")]
-    public List<ActionType> sequence;
-}
+
+
+
+
+
+
 
 
 public class SequenceValidator : MonoBehaviour
-{
 {
     [Header("Game Progression Settings")]
     [Tooltip("Masukkan daftar urutan dari Week 1 sampai Week 8 di sini")]
@@ -38,7 +37,7 @@ public class SequenceValidator : MonoBehaviour
 
     private void CheckActionSequence(ActionType receivedAction)
     {
-        List<ActionType> requiredSequence = currentWeek - 1 < allWeeksData.Count ? allWeeksData[currentWeek - 1].sequence : new List<ActionType>();
+        List<ActionType> requiredSequence = currentWeek - 1 < allWeeksData.Count ? allWeeksData[currentWeek - 1].requiredSequence : new List<ActionType>();
         if (requiredSequence == null || requiredSequence.Count == 0) return;
 
         // cek aksinya sesuai dengan step saat ini ngga
@@ -80,6 +79,4 @@ public class SequenceValidator : MonoBehaviour
             GameEvents.OnWeekStarted?.Invoke(currentWeek);
         }
     }
-}
-
 }
